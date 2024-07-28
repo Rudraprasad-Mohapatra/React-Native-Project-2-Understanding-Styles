@@ -36,7 +36,8 @@ const ActionCard = () => {
               openWebsite(
                 'https://mediumpulse.com/2024/07/27/skateboarding-olympics-games-paris-2024/',
               );
-            }}>
+            }}
+            >
             <Text style={styles.readMore}>Read More ...</Text>
           </TouchableOpacity>
         </View>
@@ -64,12 +65,14 @@ const styles = StyleSheet.create({
   },
   elevatedCard: {
     backgroundColor: '#FFFFFF',
-    elevation: 3,
+    elevation: 8, //android
+    shadowColor: 'red', // ios
     shadowOffset: {
-      width: 1,
-      height: 1,
-    },
-    shadowColor: '#BB7E6C',
+      width: 0,
+      height: 2,
+    }, // ios
+    shadowOpacity: 0.25, // ios
+    shadowRadius:3.84, // ios
   },
   headingContainer: {},
   headertext: {
