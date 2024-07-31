@@ -9,7 +9,7 @@ import {
 import React from 'react';
 
 const ActionCard = () => {
-  function openWebsite(websiteLink: String) {
+  function openWebsite(websiteLink: string) {
     Linking.openURL(websiteLink);
   }
   return (
